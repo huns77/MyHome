@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="Mycss.css"/>
+    <head>
+        <script>
+        window.addEventListener("load", function() {
+    setTimeout(() => {
+        // content인 id찾아서 content변수로 넣기
+        const content = document.getElementById("left_content");
+
+        // visible 클래스 추가
+        content.classList.add("visible");
+
+        // hidden 클래스 삭제
+        content.classList.remove("left_hidden");
+
+    }, 700);
+});
+
+        </script>
+    </head>
+    <body>
+        <section>
+            <div class="center">
+                <header>
+                    <p class="web-color"></p>
+                    <nav class="web-nav">
+                        <ion-icon name="moon-outline"></ion-icon>
+                        <span><a href="index.html"><img src="mainicon.png"></a></span>
+                        <ul class="nav_ul">
+                            <a href="portfolio.html"><li class="nav_li">포트폴리오</li></a>
+                            <a href="site.html"><li class="nav_li">사이트소개</li></a>
+                            <a href="infood.html"><li class="nav_li">집콕음식</li></a>
+                            <a href="outfood.html"><li class="nav_li">나들이음식</li></a>
+                            <a href="email.html"><li class="nav_li">친구하자</li></a>
+                        </ul>
+                    </nav>
+                </header> 
+                    <content>
+                        <div id="left_content" class="left_hidden">
+                            <span><img src="mypick.jpg" class="mainimg"alt="Animated Image"></span>
+                            <ul class="content_ul">
+                            <li>자기소개</li>
+                            </ul>
+                        </div>
+
+                    </content>
+            </div>
+        </section>
+
+    </body>
+    <footer>
+
+    </footer>
+</html>
